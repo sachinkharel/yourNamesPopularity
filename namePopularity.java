@@ -19,8 +19,6 @@ import org.apache.commons.csv.*;
 
 public class namePopularity extends Application {
     public static void main(String[] args) throws IOException {
-        // namePopularity name = new namePopularity();
-        // name.testGetRank();
         launch(args);
     }
 
@@ -32,9 +30,7 @@ public class namePopularity extends Application {
 
         for (CSVRecord record : CSVFormat.EXCEL.parse(fr)) {
             String currName = record.get(0);
-            // System.out.println(currName);
             String currgender = record.get(1);
-            // System.out.println(currgender);
             if (currgender.equals("F") && gender.equals("F")) {
                 rank += 1;
                 // System.out.println(rank);
@@ -49,7 +45,6 @@ public class namePopularity extends Application {
 
             if (currgender.equals("M") && gender.equals("M")) {
                 rank += 1;
-                // System.out.println(rank);
                 if (currName.equals(name)) {
                     return rank;
                 } else {
@@ -85,8 +80,6 @@ public class namePopularity extends Application {
     }
 
     public String whatIsNameInYear(int newYear, int yourRank, String gender) throws IOException {
-        // Reader fr = new FileReader("yob" + year + ".csv");
-        // int yourRank = getRank(year, name, gender);
         String yourName = getName(newYear, yourRank, gender);
         return yourName;
     }
