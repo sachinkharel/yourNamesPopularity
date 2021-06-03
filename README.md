@@ -3,7 +3,7 @@
 This is the project from Coursera Course named "Java Programming: Solving Problems with Software" with addition of JavaFx by Sachin Kharel.
 - You will need to have java installed inside your system and import javaFX libraries inside your IDE.
 - Additionally you need to add commons library from oracale inside your IDE for using CSVRecord function (you can use any other function to parse through the csv file instead of CSVRecord function).
-- You can find csv inside CSV-Data folder. (These files are downloaded from Social Security Administration USA website).
+- You can find csv inside CSV-DATA folder. (These files are downloaded from Social Security Administration USA website).
 
 Useful links:
 
